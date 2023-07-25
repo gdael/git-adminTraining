@@ -1,0 +1,34 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Program%20Files%20(x86)/Talend-Studio/studio/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.18.0.20210402-1458/jars/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [file:/C:/Program%20Files%20(x86)/Talend-Studio/studio/configuration/org.eclipse.osgi/1160/0/.cp/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[INFO] Disabling enhanced local repository: using legacy is strongly discouraged to ensure build reproducibility.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --< org.example.git_talend_training_version_2.job:Training1_Load_Data >--
+[INFO] Building GIT_TALEND_TRAINING_VERSION_2 Training1_Load_Data-0.1.0 (0.1,Job Designs) 0.1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for net.minidev:accessors-smart:jar:2.4.7 is missing, no dependency information available
+[WARNING] The POM for org.ow2.asm:asm:jar:9.1 is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-lang3:jar:3.10 is missing, no dependency information available
+[WARNING] The POM for org.talend.daikon:crypto-utils:jar:7.0.5 is missing, no dependency information available
+[WARNING] The POM for org.dom4j:dom4j:jar:2.1.3 is missing, no dependency information available
+[WARNING] The POM for net.minidev:json-smart:jar:2.4.7 is missing, no dependency information available
+[WARNING] The POM for org.apache.logging.log4j:log4j-core:jar:2.17.1 is missing, no dependency information available
+[WARNING] The POM for org.slf4j:slf4j-api:jar:1.7.34 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:talendcsv:jar:1.1.0 is missing, no dependency information available
+[WARNING] The POM for org.example.git_talend_training_version_2.code:routines:jar:8.0.1 is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.190 s
+[INFO] Finished at: 2023-07-21T15:28:01+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project Training1_Load_Data: Could not resolve dependencies for project org.example.git_talend_training_version_2.job:Training1_Load_Data:jar:0.1.0: Cannot access central (https://repo1.maven.org/maven2/) in offline mode and the artifact org.example.git_talend_training_version_2.code:routines:jar:8.0.1 has not been downloaded from it before. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
