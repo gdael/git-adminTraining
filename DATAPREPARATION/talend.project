@@ -8,4 +8,5 @@
     <migrationTask xmi:id="_jHOkUCwNEe6tysXiupFy4A" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_jGMCgSwNEe6tysXiupFy4A" login="g.dael@mtc.local" firstName="Glenn Marvin" lastName="Dael" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_2CyicCzpEe6IBahbAqBPPw" login="i.mangubat@mtc.local" firstName="Ivan" lastName="Mangubat" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
