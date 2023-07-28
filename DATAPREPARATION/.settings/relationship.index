@@ -17,4 +17,19 @@
     "version" : "Latest",
     "type" : "job"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "__xZjgCzuEe6tX-yb_1lfkA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_UhJ90Cz0Ee6tX-yb_1lfkA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_UhJ90Cz0Ee6tX-yb_1lfkA - SampleDB",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
