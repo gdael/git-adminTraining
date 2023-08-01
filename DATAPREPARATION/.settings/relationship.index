@@ -24,10 +24,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_UhJ90Cz0Ee6tX-yb_1lfkA",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_UhJ90Cz0Ee6tX-yb_1lfkA - SampleDB",
     "version" : "Latest",
     "type" : "schema"
