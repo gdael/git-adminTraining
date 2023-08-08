@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:KyD+RmDIWaqJj9ghu6kMr+eS0J/ZK+oGWRA1xqX6"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:u/7aVBe13BY3szDJECGRrPSW4ORo5iybcv1E0v25"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NdvFVWY5+U2HInpAOkEVQ3OnEDvLH5y3Qp/wU+AO"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NMyhNS7MQ/tFHLTtaBX8teGQf/cmgHO0J24CICQp"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -110,8 +110,6 @@
   </parameters>
   <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MONGODB_4_4_X"/>
@@ -129,7 +127,7 @@
     <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" show="false" value="false"/>
     <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:gnwe3Ml7FXlnCXtEbHO+bLSF9TyPHu9YsmiH7Tcf"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:b9o3iKUlhOSrS+cs9CEaEhzXMLc7a9nm6JiEntJS"/>
     <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" show="false" value="&quot;mongouser@EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="KRB_REALM" show="false" value="&quot;EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="KRB_KDC" show="false" value="&quot;kdc.example.com&quot;"/>
@@ -164,7 +162,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMongoDBInput_1">
       <column comment="" key="false" length="-1" name="Index" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="-1" name="UserID" nullable="true" originalDbColumnName="User ID" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="UserID" nullable="true" originalDbColumnName="User Id" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FirstName" nullable="true" originalDbColumnName="First Name" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LastName" nullable="true" originalDbColumnName="Last Name" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Gender" nullable="true" originalDbColumnName="Sex" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -174,17 +172,17 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Index"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -228,7 +226,7 @@
     <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" show="false" value="false"/>
     <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Svfn85GEj5+fXgN+bOg7v4wgEkPbCa9p4GSUzdCQ"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:qMiw/HRJC0tuQWCKNZVWDkTzayrCSMhq/VQ+YPy7"/>
     <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" show="false" value="&quot;mongouser@EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="KRB_REALM" show="false" value="&quot;EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="KRB_KDC" show="false" value="&quot;kdc.example.com&quot;"/>
@@ -259,13 +257,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3a8924e5-10d9-4024-8ee6-ee721c9b2d93"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sFe+/H5M/IbIln+qu8AxxYvN5cxPmesj4K7Ic+/QTbtuAmnbha9oFbL34rX48nbBKrSomAZmy2Xd&#13;
-P5D/o/ObCQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8fa26ed6-3f9b-45b6-bcb1-924467c133a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>53CJ8Gv8sAZv1lSu4opAa2HIowHyk651BAyPUxz+3q/eZHuLaSkSwJh1EQlr12H12euBSYde2NPA&#13;
-4HCMwSEOeg==</DigestValue></Reference></SignedInfo><SignatureValue>PiliLN6c93UGJ/0MRwA1IPZyG50gKoINwSv/4Qzm2GE0MRAEHft4N6ARXC/AD8xIBPFQVlhuvQ70&#13;
-IdA8oKQOIE6FjN92x5IaNRqmef0/soDnMFaNAE7eeIP9tMAFm+0s7TH+CHZpc6mvoOIbckWU+voq&#13;
-0WC2sJKRPawCq3ezsicmt127qPoBkoz5DAcyYjBXpGmNWeAM1X9RvO2pn+zrfWEwnr6IyGev2gyv&#13;
-fVZhxhOnxbfhlXwE6UYedCJMXcaIxHXoRo4307gglUgIC67tucJONTi2IxvcyHS6wVHtdsgfcng9&#13;
-W2cDnqumVnsdiTHjVVNU9QV9myYnmogIsNEMag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_65f7f944-d194-4ca0-9cbb-2688cb8f53b1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gocOEGc5d1fh+LZejIfa+JwEhW47bkgBVuihm6OkCRqixtzqwvkADaF2GZf7rDyvHb9FMFUI+R2f&#13;
+F5rMtx4Rgw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4a349953-19da-45ef-8929-71f5c4686432"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wWzu2GkYYObjLSY1v1qVRvnWLEBQKBnXm7dLZLTZzum5Vt899W161yI9NCxHWtcwsnB6rrZaGG1H&#13;
+Tp9G89jbyw==</DigestValue></Reference></SignedInfo><SignatureValue>g3rx/KzrzVSyZMY49w9EsIPHCiv4V2ZX0hvtDDU70Vql245Dgc8jr12/NpbuQI9bj+WPxZro7Juc&#13;
+HYmtQIFQqFyOO8sJBtJvsZ4uSQSEsiAS+KY+ErXrzZhcfRtYsdp8zpXTJHyDaEf2ITGUlH6/0H+I&#13;
+ljFrEXbasL9dWn7l+RZVtLYwXyEPX0+c534d5svYGkwpcmDIiCxV36F8tr5ldPDy/QTBpiCh4V7q&#13;
+tFr21zYvaDwtffxy7Ok3g7Kdxnfa4nBnyCq/Tdj9Y3cqZT3i0NtRRTfijPn2Er+sCDGhWZa0gLHx&#13;
+/kLbW/2AdjEWT8AusS6Ky+9z+swjeiIImTaqRQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -287,4 +285,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8fa26ed6-3f9b-45b6-bcb1-924467c133a5" Target="#_3a8924e5-10d9-4024-8ee6-ee721c9b2d93"><Timestamp>2023-08-08 00:50:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4a349953-19da-45ef-8929-71f5c4686432" Target="#_65f7f944-d194-4ca0-9cbb-2688cb8f53b1"><Timestamp>2023-08-08 00:51:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
