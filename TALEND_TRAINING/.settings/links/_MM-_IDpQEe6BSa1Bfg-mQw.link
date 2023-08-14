@@ -9,6 +9,15 @@
     }, {
       "id" : "_PWHNEDptEe6BSa1Bfg-mQw",
       "name" : "vFilePath"
+    }, {
+      "id" : "_eGqWcjpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDB"
+    }, {
+      "id" : "_eGqWczpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBCollection"
+    }, {
+      "id" : "_eGqWcTpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBServer"
     } ]
   } ]
 }
