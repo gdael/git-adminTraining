@@ -1,0 +1,17 @@
+{
+  "itemId" : "_MM-_IDpQEe6BSa1Bfg-mQw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_eGRU4DpQEe6BSa1Bfg-mQw",
+    "parameterList" : [ {
+      "id" : "_eGqWcjpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDB"
+    }, {
+      "id" : "_eGqWczpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBCollection"
+    }, {
+      "id" : "_eGqWcTpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBServer"
+    } ]
+  } ]
+}
