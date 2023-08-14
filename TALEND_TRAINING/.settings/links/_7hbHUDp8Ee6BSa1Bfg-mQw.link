@@ -1,0 +1,23 @@
+{
+  "itemId" : "_7hbHUDp8Ee6BSa1Bfg-mQw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_eGRU4DpQEe6BSa1Bfg-mQw",
+    "parameterList" : [ {
+      "id" : "_Rn3NQDptEe6BSa1Bfg-mQw",
+      "name" : "vFile"
+    }, {
+      "id" : "_PWHNEDptEe6BSa1Bfg-mQw",
+      "name" : "vFilePath"
+    }, {
+      "id" : "_eGqWcjpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDB"
+    }, {
+      "id" : "_eGqWczpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBCollection"
+    }, {
+      "id" : "_eGqWcTpQEe6BSa1Bfg-mQw",
+      "name" : "vMongoDBServer"
+    } ]
+  } ]
+}
