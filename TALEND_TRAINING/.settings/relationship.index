@@ -272,6 +272,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_Wg-VgDwTEe6FEOMPIm95JA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "TALEND_TRAINING:_Kedp4DvnEe6WdeAi-KED2w",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_a65dwDwAEe6FEOMPIm95JA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_X4oWoDo_Ee6mGLoFW92iJA",
     "version" : "0.1",
     "type" : "job"
