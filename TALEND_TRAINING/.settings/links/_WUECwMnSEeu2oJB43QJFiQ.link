@@ -1,0 +1,84 @@
+{
+  "itemId" : "_WUECwMnSEeu2oJB43QJFiQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_LbUiIMnTEeu2oJB43QJFiQ",
+    "parameterList" : [ {
+      "id" : "_LbndGMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslTrustStorePassword"
+    }, {
+      "id" : "_LbndGsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_datastorePath"
+    }, {
+      "id" : "_LbndFsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_accessToken"
+    }, {
+      "id" : "_LbndG8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_proxyPort"
+    }, {
+      "id" : "_LbndHcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslAlgorithm"
+    }, {
+      "id" : "_LbndEsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_proxyHost"
+    }, {
+      "id" : "_LbndEcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslTrustStore"
+    }, {
+      "id" : "_LbndF8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientSecretFile"
+    }, {
+      "id" : "_LbndFMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientId"
+    }, {
+      "id" : "_LbndE8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_serviceAccountFile"
+    }, {
+      "id" : "_LbndGcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_readTimeout"
+    }, {
+      "id" : "_LbndHMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientSecret"
+    }, {
+      "id" : "_LbndFcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_applicationName"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_qHZj8MqOEeuEf_PYVN2bsg",
+    "parameterList" : [ {
+      "id" : "_qIjagMqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_parentFolderName"
+    }, {
+      "id" : "_qIkBkMqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_folderName"
+    }, {
+      "id" : "_qIkBkcqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_fileName"
+    }, {
+      "id" : "_qIkBksqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_isDeletedByName"
+    }, {
+      "id" : "_qIkBk8qOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_tempFolder"
+    }, {
+      "id" : "_qIkBlMqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_source"
+    }, {
+      "id" : "_qIkBlcqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_destination"
+    }, {
+      "id" : "_qIkBlsqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_objectType"
+    }, {
+      "id" : "_qIkBl8qOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_deleteAfterOperation"
+    }, {
+      "id" : "_qIkBmMqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_sendToTrash"
+    }, {
+      "id" : "_qIkBmcqOEeuEf_PYVN2bsg",
+      "name" : "GoogleDrive_pathSeparator"
+    } ]
+  } ]
+}

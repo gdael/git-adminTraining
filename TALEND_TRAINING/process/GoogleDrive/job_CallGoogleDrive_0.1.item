@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Dev" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="Folder name on Google Drive" internalId="_XtOJoM9aEeumWPXm9d16Tg" name="GoogleDrive_folderName" prompt="GoogleDrive_folderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Download folder path (OUT)" internalId="_XtOJoc9aEeumWPXm9d16Tg" name="GoogleDrive_localDownloadFolder" prompt="GoogleDrive_localDownloadFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Local folder path (IN)" internalId="_XtOJos9aEeumWPXm9d16Tg" name="GoogleDrive_localSourceFolder" prompt="GoogleDrive_localSourceFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Parent folder name on Google Drive" internalId="_XtOJo89aEeumWPXm9d16Tg" name="GoogleDrive_parentFolderName" prompt="GoogleDrive_parentFolderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="java separator use in path" internalId="_XtOJpM9aEeumWPXm9d16Tg" name="GoogleDrive_pathSeparator" prompt="GoogleDrive_pathSeparator?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value="/"/>
+    <contextParameter comment="Name of the source object" internalId="_XtOJpc9aEeumWPXm9d16Tg" name="GoogleDrive_source" prompt="GoogleDrive_source?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Google Drive access token" internalId="_XtOwsM9aEeumWPXm9d16Tg" name="GoogleDrive_accessToken" prompt="GoogleDrive_accessToken?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive application name" internalId="_XtOwsc9aEeumWPXm9d16Tg" name="GoogleDrive_applicationName" prompt="GoogleDrive_applicationName?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client ID" internalId="_XtOwss9aEeumWPXm9d16Tg" name="GoogleDrive_clientId" prompt="GoogleDrive_clientId?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client secret" internalId="_XtOws89aEeumWPXm9d16Tg" name="GoogleDrive_clientSecret" prompt="GoogleDrive_clientSecret?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="Google Drive client secret file" internalId="_XtOwtM9aEeumWPXm9d16Tg" name="GoogleDrive_clientSecretFile" prompt="GoogleDrive_clientSecretFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google drive datastore folder" internalId="_XtOwtc9aEeumWPXm9d16Tg" name="GoogleDrive_datastorePath" prompt="GoogleDrive_datastorePath?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive proxy host" internalId="_XtOwts9aEeumWPXm9d16Tg" name="GoogleDrive_proxyHost" prompt="GoogleDrive_proxyHost?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="Google Drive proxy port" internalId="_XtOwt89aEeumWPXm9d16Tg" name="GoogleDrive_proxyPort" prompt="GoogleDrive_proxyPort?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="8087"/>
+    <contextParameter comment="Google Drive read timeout" internalId="_XtOwuM9aEeumWPXm9d16Tg" name="GoogleDrive_readTimeout" prompt="GoogleDrive_readTimeout?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="30"/>
+    <contextParameter comment="Google Drive service account file" internalId="_XtOwuc9aEeumWPXm9d16Tg" name="GoogleDrive_serviceAccountFile" prompt="GoogleDrive_serviceAccountFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL algorithm" internalId="_XtOwus9aEeumWPXm9d16Tg" name="GoogleDrive_sslAlgorithm" prompt="GoogleDrive_sslAlgorithm?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="SSL"/>
+    <contextParameter comment="Google Drive ssl truststore" internalId="_XtOwu89aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStore" prompt="GoogleDrive_sslTrustStore?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL truststore" internalId="_XtOwvM9aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStorePassword" prompt="GoogleDrive_sslTrustStorePassword?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_XtOwvc9aEeumWPXm9d16Tg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_XtOwvs9aEeumWPXm9d16Tg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database Hostname" internalId="_XtOwv89aEeumWPXm9d16Tg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database Password" internalId="_XtOwwM9aEeumWPXm9d16Tg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_XtOwwc9aEeumWPXm9d16Tg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_XtOwws9aEeumWPXm9d16Tg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_XtOww89aEeumWPXm9d16Tg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_XtOwxM9aEeumWPXm9d16Tg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:M1+oXYEo+tX0kwTogaddmahp0DFM7Dlk/8wFCkDH51MDjw=="/>
+    <contextParameter comment="file path for crytographic" internalId="_XtOwxc9aEeumWPXm9d16Tg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_XtOwxs9aEeumWPXm9d16Tg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_XtOwx89aEeumWPXm9d16Tg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_XtOwyM9aEeumWPXm9d16Tg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_XtOwyc9aEeumWPXm9d16Tg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_XtOwys9aEeumWPXm9d16Tg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_XtOwy89aEeumWPXm9d16Tg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_XtOwzM9aEeumWPXm9d16Tg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_XtOwzc9aEeumWPXm9d16Tg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_XtOwzs9aEeumWPXm9d16Tg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="Folder name on Google Drive" internalId="_XtOwz89aEeumWPXm9d16Tg" name="GoogleDrive_folderName" prompt="GoogleDrive_folderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Download folder path (OUT)" internalId="_XtOw0M9aEeumWPXm9d16Tg" name="GoogleDrive_localDownloadFolder" prompt="GoogleDrive_localDownloadFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Local folder path (IN)" internalId="_XtOw0c9aEeumWPXm9d16Tg" name="GoogleDrive_localSourceFolder" prompt="GoogleDrive_localSourceFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Parent folder name on Google Drive" internalId="_XtOw0s9aEeumWPXm9d16Tg" name="GoogleDrive_parentFolderName" prompt="GoogleDrive_parentFolderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="java separator use in path" internalId="_XtOw089aEeumWPXm9d16Tg" name="GoogleDrive_pathSeparator" prompt="GoogleDrive_pathSeparator?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value="/"/>
+    <contextParameter comment="Name of the source object" internalId="_XtOw1M9aEeumWPXm9d16Tg" name="GoogleDrive_source" prompt="GoogleDrive_source?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Google Drive access token" internalId="_XtOw1c9aEeumWPXm9d16Tg" name="GoogleDrive_accessToken" prompt="GoogleDrive_accessToken?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive application name" internalId="_XtOw1s9aEeumWPXm9d16Tg" name="GoogleDrive_applicationName" prompt="GoogleDrive_applicationName?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client ID" internalId="_XtOw189aEeumWPXm9d16Tg" name="GoogleDrive_clientId" prompt="GoogleDrive_clientId?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client secret" internalId="_XtOw2M9aEeumWPXm9d16Tg" name="GoogleDrive_clientSecret" prompt="GoogleDrive_clientSecret?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="Google Drive client secret file" internalId="_XtOw2c9aEeumWPXm9d16Tg" name="GoogleDrive_clientSecretFile" prompt="GoogleDrive_clientSecretFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google drive datastore folder" internalId="_XtOw2s9aEeumWPXm9d16Tg" name="GoogleDrive_datastorePath" prompt="GoogleDrive_datastorePath?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive proxy host" internalId="_XtOw289aEeumWPXm9d16Tg" name="GoogleDrive_proxyHost" prompt="GoogleDrive_proxyHost?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="Google Drive proxy port" internalId="_XtOw3M9aEeumWPXm9d16Tg" name="GoogleDrive_proxyPort" prompt="GoogleDrive_proxyPort?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="8087"/>
+    <contextParameter comment="Google Drive read timeout" internalId="_XtOw3c9aEeumWPXm9d16Tg" name="GoogleDrive_readTimeout" prompt="GoogleDrive_readTimeout?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="30"/>
+    <contextParameter comment="Google Drive service account file" internalId="_XtOw3s9aEeumWPXm9d16Tg" name="GoogleDrive_serviceAccountFile" prompt="GoogleDrive_serviceAccountFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL algorithm" internalId="_XtOw389aEeumWPXm9d16Tg" name="GoogleDrive_sslAlgorithm" prompt="GoogleDrive_sslAlgorithm?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="SSL"/>
+    <contextParameter comment="Google Drive ssl truststore" internalId="_XtOw4M9aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStore" prompt="GoogleDrive_sslTrustStore?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL truststore" internalId="_XtOw4c9aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStorePassword" prompt="GoogleDrive_sslTrustStorePassword?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_XtOw4s9aEeumWPXm9d16Tg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_XtOw489aEeumWPXm9d16Tg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="dev"/>
+    <contextParameter comment="Database Hostname" internalId="_XtOw5M9aEeumWPXm9d16Tg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="dev"/>
+    <contextParameter comment="Database Password" internalId="_XtOw5c9aEeumWPXm9d16Tg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_XtOw5s9aEeumWPXm9d16Tg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_XtOw589aEeumWPXm9d16Tg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="root"/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_XtOw6M9aEeumWPXm9d16Tg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_XtOw6c9aEeumWPXm9d16Tg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:r+RefofJ+1j+Tp1nox+FCIedno5vga4fYnzGg6uuesgiVQ=="/>
+    <contextParameter comment="file path for crytographic" internalId="_XtOw6s9aEeumWPXm9d16Tg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_XtOw689aEeumWPXm9d16Tg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_XtOw7M9aEeumWPXm9d16Tg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_XtOw7c9aEeumWPXm9d16Tg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_XtOw7s9aEeumWPXm9d16Tg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;dev&quot;"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_XtOw789aEeumWPXm9d16Tg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_XtOw8M9aEeumWPXm9d16Tg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_XtOw8c9aEeumWPXm9d16Tg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_XtOw8s9aEeumWPXm9d16Tg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_XtOw889aEeumWPXm9d16Tg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="Folder name on Google Drive" internalId="_XtOw9M9aEeumWPXm9d16Tg" name="GoogleDrive_folderName" prompt="GoogleDrive_folderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Download folder path (OUT)" internalId="_XtOw9c9aEeumWPXm9d16Tg" name="GoogleDrive_localDownloadFolder" prompt="GoogleDrive_localDownloadFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Local folder path (IN)" internalId="_XtOw9s9aEeumWPXm9d16Tg" name="GoogleDrive_localSourceFolder" prompt="GoogleDrive_localSourceFolder?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Parent folder name on Google Drive" internalId="_XtOw989aEeumWPXm9d16Tg" name="GoogleDrive_parentFolderName" prompt="GoogleDrive_parentFolderName?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="java separator use in path" internalId="_XtOw-M9aEeumWPXm9d16Tg" name="GoogleDrive_pathSeparator" prompt="GoogleDrive_pathSeparator?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value="/"/>
+    <contextParameter comment="Name of the source object" internalId="_XtOw-c9aEeumWPXm9d16Tg" name="GoogleDrive_source" prompt="GoogleDrive_source?" promptNeeded="false" repositoryContextId="_qHZj8MqOEeuEf_PYVN2bsg" type="id_String" value=""/>
+    <contextParameter comment="Google Drive access token" internalId="_XtOw-s9aEeumWPXm9d16Tg" name="GoogleDrive_accessToken" prompt="GoogleDrive_accessToken?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive application name" internalId="_XtOw-89aEeumWPXm9d16Tg" name="GoogleDrive_applicationName" prompt="GoogleDrive_applicationName?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client ID" internalId="_XtOw_M9aEeumWPXm9d16Tg" name="GoogleDrive_clientId" prompt="GoogleDrive_clientId?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive client secret" internalId="_XtOw_c9aEeumWPXm9d16Tg" name="GoogleDrive_clientSecret" prompt="GoogleDrive_clientSecret?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="Google Drive client secret file" internalId="_XtOw_s9aEeumWPXm9d16Tg" name="GoogleDrive_clientSecretFile" prompt="GoogleDrive_clientSecretFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google drive datastore folder" internalId="_XtOw_89aEeumWPXm9d16Tg" name="GoogleDrive_datastorePath" prompt="GoogleDrive_datastorePath?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive proxy host" internalId="_XtOxAM9aEeumWPXm9d16Tg" name="GoogleDrive_proxyHost" prompt="GoogleDrive_proxyHost?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="Google Drive proxy port" internalId="_XtOxAc9aEeumWPXm9d16Tg" name="GoogleDrive_proxyPort" prompt="GoogleDrive_proxyPort?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="8087"/>
+    <contextParameter comment="Google Drive read timeout" internalId="_XtOxAs9aEeumWPXm9d16Tg" name="GoogleDrive_readTimeout" prompt="GoogleDrive_readTimeout?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Integer" value="30"/>
+    <contextParameter comment="Google Drive service account file" internalId="_XtOxA89aEeumWPXm9d16Tg" name="GoogleDrive_serviceAccountFile" prompt="GoogleDrive_serviceAccountFile?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL algorithm" internalId="_XtOxBM9aEeumWPXm9d16Tg" name="GoogleDrive_sslAlgorithm" prompt="GoogleDrive_sslAlgorithm?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value="SSL"/>
+    <contextParameter comment="Google Drive ssl truststore" internalId="_XtOxBc9aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStore" prompt="GoogleDrive_sslTrustStore?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_String" value=""/>
+    <contextParameter comment="Google Drive SSL truststore" internalId="_XtOxBs9aEeumWPXm9d16Tg" name="GoogleDrive_sslTrustStorePassword" prompt="GoogleDrive_sslTrustStorePassword?" promptNeeded="false" repositoryContextId="_LbUiIMnTEeu2oJB43QJFiQ" type="id_Password" value=""/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_XtOxB89aEeumWPXm9d16Tg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_XtOxCM9aEeumWPXm9d16Tg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database Hostname" internalId="_XtOxCc9aEeumWPXm9d16Tg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Database Password" internalId="_XtOxCs9aEeumWPXm9d16Tg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_XtOxC89aEeumWPXm9d16Tg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_XtOxDM9aEeumWPXm9d16Tg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_XtOxDc9aEeumWPXm9d16Tg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_XtOxDs9aEeumWPXm9d16Tg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:XwVy9tRBFBdeI/PddVQCTzxeRLOtSNtWlRl/NW7gp97rjg=="/>
+    <contextParameter comment="file path for crytographic" internalId="_XtOxD89aEeumWPXm9d16Tg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_XtOxEM9aEeumWPXm9d16Tg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_XtOxEc9aEeumWPXm9d16Tg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_XtOxEs9aEeumWPXm9d16Tg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_XtOxE89aEeumWPXm9d16Tg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;test&quot;"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_XtOxFM9aEeumWPXm9d16Tg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_XtOxFc9aEeumWPXm9d16Tg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_XtOxFs9aEeumWPXm9d16Tg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_XtOxF89aEeumWPXm9d16Tg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_XtOxGM9aEeumWPXm9d16Tg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="320"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JL25ZzqhGLo2VgUuLnGJU5D6q0T4999UvHZtlXGK"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/7.3.1.Cloud/workspace_vmtac/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yj+3W4Q8kO9irkiQM5yWWwEJCgxPyE/U10hZa9MC"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_ffOSIMnPEeu2oJB43QJFiQ" name="DataOperation"/>
+    <routinesParameter id="_ffSjkMnPEeu2oJB43QJFiQ" name="Mathematical"/>
+    <routinesParameter id="_ffW1AMnPEeu2oJB43QJFiQ" name="Numeric"/>
+    <routinesParameter id="_ffafYMnPEeu2oJB43QJFiQ" name="Relational"/>
+    <routinesParameter id="_ff5nkMnPEeu2oJB43QJFiQ" name="SQLike"/>
+    <routinesParameter id="_ffew0MnPEeu2oJB43QJFiQ" name="StringHandling"/>
+    <routinesParameter id="_ffh0IMnPEeu2oJB43QJFiQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_ffkQYMnPEeu2oJB43QJFiQ" name="TalendDate"/>
+    <routinesParameter id="_ffszQMnPEeu2oJB43QJFiQ" name="TalendStringUtil"/>
+    <routinesParameter id="_ffnTsMnPEeu2oJB43QJFiQ" name="TalendString"/>
+    <routinesParameter id="_oGip0IyvEemuGIWPULx7VA" name="TalendEncryption"/>
+    <routinesParameter id="_gvmowM9dEeuMytmLwTO2OA" name="DQTechnical"/>
+    <routinesParameter id="_gvX_Qs9dEeuMytmLwTO2OA" name="DataMasking"/>
+    <routinesParameter id="_gvc3wM9dEeuMytmLwTO2OA" name="DataQuality"/>
+    <routinesParameter id="_gvi-YM9dEeuMytmLwTO2OA" name="DqStringHandling"/>
+    <routinesParameter id="_gvfUAM9dEeuMytmLwTO2OA" name="DataQualityDependencies"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;LI&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_parentFolderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;BOTH&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List files and folders"/>
+    <metadata connector="FLOW" name="tRunJob_4">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Iterate by file/folder"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;DE&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_fileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;listExistingFileFolder.id&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_isDeletedByName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Delete any ID received"/>
+    <metadata connector="FLOW" name="tRunJob_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Prejob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.GoogleDrive_folderName = context.GoogleDrive_parentFolderName + &quot;-&quot; + TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()) ;&#10;context.GoogleDrive_pathSeparator = java.io.File.separator;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Set global variables"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;CR&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_parentFolderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_parentFolderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Create Google Drive folder"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1504">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;DE&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FOLDER&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName + &quot;copy&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Delete 2nd Google Drive folder"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;LI&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List Google Drive folder"/>
+    <metadata connector="FLOW" name="tRunJob_5">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_11"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mimeType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedTime"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kind"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trashed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="webViewLink"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;List Google Drive Folder"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_11">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GoogleDrive_localSourceFolder"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List local files"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;PU&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_fileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEDIRECTORY&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_destination"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Put into Google Drive"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_7"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;LI&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List Google Drive files"/>
+    <metadata connector="FLOW" name="tRunJob_7">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_3"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Iterate by file"/>
+    <metadata connector="FLOW" name="tFlowToIterate_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_8"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;GE&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_fileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;listFiles.name&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_destination"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_localDownloadFolder+ context.GoogleDrive_pathSeparator + ((String)globalMap.get(&quot;listFiles.name&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Download Google Drive files"/>
+    <metadata connector="FLOW" name="tRunJob_8"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_10"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;LI&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName + &quot;copy&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List 2nd Google Drive folder"/>
+    <metadata connector="FLOW" name="tRunJob_10">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_10"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mimeType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedTime"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kind"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trashed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="webViewLink"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;List 2nd Google Drive folder"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_10">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_11"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;CR&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_parentFolderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_parentFolderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName + &quot;copy&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Create 2nd Google Drive folder"/>
+    <metadata connector="FLOW" name="tRunJob_11"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_13"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;LI&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="List Google Drive files"/>
+    <metadata connector="FLOW" name="tRunJob_13">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_4"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Iterate by file"/>
+    <metadata connector="FLOW" name="tFlowToIterate_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_9"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="processor_GoogleDrive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALENDACADEMY:_WUECwMnSEeu2oJB43QJFiQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="operation_flag"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;CO&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;row14.name&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_destination"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.GoogleDrive_folderName + &quot;copy&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_objectType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;FILE&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_deleteAfterOperation"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="Boolean.FALSE"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="GoogleDrive_fileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;row14.name&quot;))+ &quot;.copy&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Copy Google Drive files"/>
+    <metadata connector="FLOW" name="tRunJob_9">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="mimeType" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="mimeType"/>
+      </column>
+      <column comment="" key="false" length="255" name="modifiedTime" nullable="false" originalLength="-1" pattern="&quot;yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="modifiedTime"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="size" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="size"/>
+      </column>
+      <column comment="" key="false" length="-1" name="kind" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="kind"/>
+      </column>
+      <column comment="" key="false" length="-1" name="trashed" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="trashed"/>
+      </column>
+      <column comment="" key="false" length="-1" name="parents" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="parents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="webViewLink" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="webViewLink"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="contextManagement:LoadContext" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadContext_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPrejob_1"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_2" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_2:COMPONENT_LIST" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="contextManagement:LoadContext"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="FLOW" label="listExistingFileFolder" lineStyle="0" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="listExistingFileFolder"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="LoadContext_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tLogRow_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row13"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tRunJob_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tRunJob_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tRunJob_6">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="FLOW" label="listFiles" lineStyle="0" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tFlowToIterate_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="listFiles"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tRunJob_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_3" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_3" target="tRunJob_8">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tRunJob_10" offsetLabelX="0" offsetLabelY="0" source="tRunJob_10" target="tLogRow_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_10" offsetLabelX="0" offsetLabelY="0" source="tRunJob_10" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_11" offsetLabelX="0" offsetLabelY="0" source="tRunJob_11" target="tRunJob_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_11" offsetLabelX="0" offsetLabelY="0" source="tRunJob_11" target="tRunJob_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk15"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tRunJob_13" offsetLabelX="0" offsetLabelY="0" source="tRunJob_13" target="tFlowToIterate_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row14"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_4" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_4" target="tRunJob_9">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate5"/>
+  </connection>
+  <note opaque="true" posX="32" posY="-320" sizeHeight="129" sizeWidth="801" text="Version: 1.0&#13;&#10;Description:&#13;&#10;&#13;&#10;This job is used to load data to Google Drive using the subjob Processor_GoogleDrive">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Delete any existing file and folder"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Set global variables"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_10"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_11"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_13"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="LoadContext_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bfa114b1-de34-4dc0-9477-e7edf44228c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kTu9XafdZbnJTkMZWJV0kUFRc5s4hdEd3co28CpXfLEW7vD3nmaDGwVjCXoCEEC4BMX2ZgBNpwff&#13;
+TKEWxNoN5A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6139f221-7079-4edf-98b3-51ebf0f76774"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MVnD26MlSGaM5MGXDSgqu/1kjV8UaO0ggcuY4XmPeAPDyAJBgsyCqacnDC9YvtgqGzfLpLGgNNW6&#13;
+SmGJLXTHSw==</DigestValue></Reference></SignedInfo><SignatureValue>Mn76CCa0W0kRedsfmlLHwwDZ1vq5pbVFxJ9rJ1uSRkUxWDerXGcsJnZmwPpZ/vLCkBE1OW3Ja10X&#13;
+HerlR8/DNsfs/hq+gMhmD7MvZB6Jsvsv742lDjIhRt9ApxA0fPV978enYMAdyjU4p3fB5NmQuDgO&#13;
+G5a3/L61P55PMhEFGlGrtvufFJMXsJ9ZGtzPdHa9CS7o+JpuypgUTdPi1gZbIrqIivyAUntdciuH&#13;
+Y9FowxeJ5VDR0+4rkxPqBA8ZvZJklPZU8OpQ0jBXCfpcYPE1F0yLh8Bpt9Z+CCqcul62gGV6G1OQ&#13;
+LtTJoqMrWPfKtb3qYGXpwSMgML2zEgdaVIb6fA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6139f221-7079-4edf-98b3-51ebf0f76774" Target="#_bfa114b1-de34-4dc0-9477-e7edf44228c9"><Timestamp>2023-08-16 06:46:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

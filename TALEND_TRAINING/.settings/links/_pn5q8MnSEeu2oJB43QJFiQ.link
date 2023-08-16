@@ -1,0 +1,47 @@
+{
+  "itemId" : "_pn5q8MnSEeu2oJB43QJFiQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_LbUiIMnTEeu2oJB43QJFiQ",
+    "parameterList" : [ {
+      "id" : "_LbndEcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslTrustStore"
+    }, {
+      "id" : "_LbndEsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_proxyHost"
+    }, {
+      "id" : "_LbndE8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_serviceAccountFile"
+    }, {
+      "id" : "_LbndFMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientId"
+    }, {
+      "id" : "_LbndFcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_applicationName"
+    }, {
+      "id" : "_LbndFsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_accessToken"
+    }, {
+      "id" : "_LbndF8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientSecretFile"
+    }, {
+      "id" : "_LbndGMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslTrustStorePassword"
+    }, {
+      "id" : "_LbndGcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_readTimeout"
+    }, {
+      "id" : "_LbndGsnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_datastorePath"
+    }, {
+      "id" : "_LbndG8nTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_proxyPort"
+    }, {
+      "id" : "_LbndHMnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_clientSecret"
+    }, {
+      "id" : "_LbndHcnTEeu2oJB43QJFiQ",
+      "name" : "GoogleDrive_sslAlgorithm"
+    } ]
+  } ]
+}

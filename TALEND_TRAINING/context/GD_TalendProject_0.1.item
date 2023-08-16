@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_qHbZIMqOEeuEf_PYVN2bsg" xmi:version="2.0">
+  <contextParameter comment="Parent folder name on Google Drive" name="GoogleDrive_parentFolderName" prompt="GoogleDrive_parentFolderName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIjagMqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Folder name on Google Drive" name="GoogleDrive_folderName" prompt="GoogleDrive_folderName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIkBkMqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="File name on Google Drive" name="GoogleDrive_fileName" prompt="GoogleDrive_fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIkBkcqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Boolean to detect if the deletion would be done by id or by name" name="GoogleDrive_isDeletedByName" prompt="GoogleDrive_isDeletedByName?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" xmi:id="_qIkBksqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Path of the temporary folder for Google Drive" name="GoogleDrive_tempFolder" prompt="GoogleDrive_tempFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIkBk8qOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Name of the source object" name="GoogleDrive_source" prompt="GoogleDrive_source?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIkBlMqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Name of the destination object" name="GoogleDrive_destination" prompt="GoogleDrive_destination?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_qIkBlcqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="FILE|FOLDER|BOTH" name="GoogleDrive_objectType" prompt="GoogleDrive_objectType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="FILE" xmi:id="_qIkBlsqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Choose if the object needs to be deleted after operation" name="GoogleDrive_deleteAfterOperation" prompt="GoogleDrive_deleteAfterOperation?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" xmi:id="_qIkBl8qOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Choose if the object needs to be sent to trash after operation" name="GoogleDrive_sendToTrash" prompt="GoogleDrive_sendToTrash?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_qIkBmMqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="java separator use in path" name="GoogleDrive_pathSeparator" prompt="GoogleDrive_pathSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/" xmi:id="_qIkBmcqOEeuEf_PYVN2bsg"/>
+  <contextParameter comment="Local folder path (IN)" name="GoogleDrive_localSourceFolder" prompt="GoogleDrive_localSourceFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_R-tvEMrCEeuJn5puyw61dA"/>
+  <contextParameter comment="Download folder path (OUT)" name="GoogleDrive_localDownloadFolder" prompt="GoogleDrive_localDownloadFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_R-tvEcrCEeuJn5puyw61dA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_511d80af-f3a5-4ecd-b22e-9efe73229110"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wC6rdhaUy89jpiCxqekbCe44st06xjOjiwFyiTedJkVmJKYOPJZ4paudSz4tLovCEc4eDpxIQDt6&#13;
+UMr7L+qKGA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6cdd1a56-ff55-48aa-a17e-e47139df29c8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tTXc6JHLDY2zw4nS+JlgkF/DiAsgpCtmJ3QQCWAFpBNHANRUmXzUG/+caJw2GR4e/n1RuTChrWTa&#13;
+mAaTwF94JA==</DigestValue></Reference></SignedInfo><SignatureValue>CTiRgfz+/bhFPrVUlQ4hQmWwx5KmpzyzjxuCSdKaA01U5MqlMeWCuIVBddvtzI7CbkewOX7z7P6x&#13;
+w5Vk2X4jIhecCD71Dd5mClVajltpwl17fi3XpUz0eljetBvXBm1+dbgyiZIH+ddSoCIhuku+AKFf&#13;
+Wrwwz+SoH5XF+qhh/LnPtnVXQ1UgI5J4pXupbQk3wedzcYcD6m5rHlK7/n2pQLfzKo1q0TGJ9gn3&#13;
+kR/U7gptu2Mmkz55qWvzjmicpG3jUM8hZUI0WpED5xAtfjCtpzOn6Yhr69hQEIpFD6ILtNkJNIY1&#13;
+P5Ysmou18hSTNvUjOGVl8myL+zyafShA9wY8CQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6cdd1a56-ff55-48aa-a17e-e47139df29c8" Target="#_511d80af-f3a5-4ecd-b22e-9efe73229110"><Timestamp>2023-08-16 06:46:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
