@@ -303,19 +303,15 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_1bwl8IX1Eem4I64wW9I-Og",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_KWbrgIL1EemhiP054CDFZw",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
     "id" : "_LbUiIMnTEeu2oJB43QJFiQ",
     "version" : "Latest",
     "type" : "context"
   }, {
     "id" : "_qHZj8MqOEeuEf_PYVN2bsg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
   }, {
@@ -326,30 +322,6 @@
     "id" : "_0fi7E9c8EeqCH9uncZU0qw",
     "version" : "Latest",
     "type" : "joblet"
-  }, {
-    "id" : "DQTechnical",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataMasking",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataQuality",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DataQualityDependencies",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "DqStringHandling",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
-    "id" : "TalendEncryption",
-    "version" : "Latest",
-    "type" : "routine"
   } ]
 }, {
   "baseItem" : {
