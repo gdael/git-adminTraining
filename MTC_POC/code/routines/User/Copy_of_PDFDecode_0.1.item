@@ -1,0 +1,96 @@
+package routines;
+import java.io.File;
+import java.io.InputStream;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.FileOutputStream;
+import java.util.Base64;
+import java.nio.charset.StandardCharsets;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Copy_of_PDFDecode {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void Base64Decode(Object text, String filePath/*, String inputPath*/) {
+    	File pdfResult=new File(filePath);
+    	StringBuilder ssb = new StringBuilder(8192);
+    	String texts=null;
+    	
+    	/*try (InputStream in = new FileInputStream("C:/Users/MTC_1/Desktop/Clinical Source/samplebase64.txt");BufferedReader r = new BufferedReader( new InputStreamReader(in, StandardCharsets.UTF_8)))
+    	{
+    		while((texts=r.readLine())!=null)
+    		{
+    			ssb.append(texts);
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    	}*/
+    	//String encodedText = new String(Base64.getEncoder().encode(text));
+    	//String Obs=text.toString();
+    	String encodedText = new String(Base64.getEncoder().encode(text.toString().getBytes(StandardCharsets.UTF_8)));
+    	//String encodedText = new String(text.getBytes(StandardCharsets.UTF_8));
+    	/*while(encodedText.indexOf("base64,")>0)
+    	{
+    		encodedText=encodedText.substring(encodedText.indexOf("base64,")+1);
+    	}
+    	try(FileOutputStream fos = new FileOutputStream(pdfResult);)
+    	{
+    		java.util.Base64.Decoder decoder = java.util.Base64.getDecoder();
+    		byte[] bf=decoder.decode(text.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
+    		//byte[] decoder = Base64.getDecoder().decode(encodedT)ext;
+    		
+    		//String str= new String(bf,java.nio.charset.StandardCharsets.UTF_8);
+    		
+    		String str = new String(bf, java.nio.charset.StandardCharsets.UTF_8);
+    		
+    		System.out.println(str);
+    		
+    		fos.write(bf);
+    		System.out.println("PDF File Written to '"+filePath+"' successfully.");
+    	}*/
+    	try(FileOutputStream fos = new FileOutputStream(pdfResult);)
+    	{
+    		byte[] decoder = Base64.getDecoder().decode(encodedText);
+    		
+    		fos.write(decoder);
+    		System.out.println("PDF File Written to '"+filePath+"' successfully.");
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    		
+    	}
+    }
+}

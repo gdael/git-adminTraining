@@ -1,0 +1,4 @@
+public static String decodeBase64(String encoded) {
+    byte[] decodedBytes = Base64.getDecoder().decode(encoded);
+    return new String(decodedBytes);
+}

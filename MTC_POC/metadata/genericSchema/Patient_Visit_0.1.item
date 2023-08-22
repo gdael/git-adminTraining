@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="_zkNCkc-TEe2r_M8QKBeeIg" name="repository.metadataGenericSchema" xmi:id="_zkNCkM-TEe2r_M8QKBeeIg"/>
+  <TalendMetadata:GenericPackage dataManager="_zkNCkM-TEe2r_M8QKBeeIg" name="repository.metadataGenericSchema" xmi:id="_zkNCkc-TEe2r_M8QKBeeIg">
+    <ownedElement id="_hhec8M-TEe2r_M8QKBeeIg" label="Patient_Visit" xmi:id="_zkNCks-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="patient_id" name="patient_id" talendType="id_String" xmi:id="_zkNCk8-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="patient_visit_id" name="patient_visit_id" talendType="id_String" xmi:id="_KUVTwNK7Ee24J-1vBwgffw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="visit_code" name="visit_code" talendType="id_String" xmi:id="_zkNClM-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="actual_visit_date_time" length="-1" name="actual_visit_date_time" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" talendType="id_Date" xmi:id="_zkNClc-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="closure_date_time" length="-1" name="closure_date_time" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" talendType="id_Date" xmi:id="_zkNCls-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="visit_type_rcd" name="visit_type_rcd" talendType="id_String" xmi:id="_zkNCl8-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="comment" name="comment" talendType="id_String" xmi:id="_zkNCmM-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cancelled_date_time" length="-1" name="cancelled_date_time" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" talendType="id_Date" xmi:id="_zkNCmc-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="arrival_date_time" length="-1" name="arrival_date_time" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" talendType="id_Date" xmi:id="_zkNCms-TEe2r_M8QKBeeIg" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74488cf6-fa45-4482-a08c-246ab5cd9745"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TA7V8uWNRq2QLv05h2Suy2yQwTLBrx9GxfhOib+PbnxRH+xui3RdYQ04LFCXKz/Yc6HvjPnVB5z9&#13;
+wHIrOWFWgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6c476dbb-61d5-428a-9345-9ed4f22f8e63"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+gz6rsQ20ScgCKMdW5zLHdPc6S+dM4mQNG7zWUPzPbccfHOcce9sLvYQxZXi0/ICjvI2DiboGnTr&#13;
+gzNqhrKlDA==</DigestValue></Reference></SignedInfo><SignatureValue>WwK2A48WiV0JXUE565hdtdvlV4UXIo4RPYUtrxbJ/IqDhYrka1vhszzH2j63rop2tN3s9HMIlPG0&#13;
+gkSFILY10DsK77eHIEKHOx00OT9csqi2qDnjG1Gfd4XV4UWDiWbe9TtOjk39Ro8pB1CddEGSzVWo&#13;
+bfuCLmX6DuiZM4Im/VoMpCliTpv181pH08OtvP+kcOD8ZurlHvUhSLLdnHEVxjWK7KK0PqY26sFx&#13;
+5Pv93kMoho9Q4jVD8j13G85TVDDe6R21wDIheVM4XBrRN4sk0EnxqusBSPdAP8O0VYAvRt5OjD3v&#13;
+eeZ11DE67hh0EBy9kesS8YUm5Mx57xU4HU/nmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6c476dbb-61d5-428a-9345-9ed4f22f8e63" Target="#_74488cf6-fa45-4482-a08c-246ab5cd9745"><Timestamp>2023-08-22 08:46:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
