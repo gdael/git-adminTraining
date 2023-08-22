@@ -543,10 +543,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_AIgNoD2SEe6FEOMPIm95JA",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_AIgNoD2SEe6FEOMPIm95JA - Customer",
     "version" : "Latest",
     "type" : "schema"
