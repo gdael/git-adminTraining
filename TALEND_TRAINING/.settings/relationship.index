@@ -558,6 +558,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_uGBdMECSEe6sFZjs4C44pg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_AIgNoD2SEe6FEOMPIm95JA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_AIgNoD2SEe6FEOMPIm95JA - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_xVvwoNL5Ee2G7bxDNOWD3g",
     "version" : "0.1",
     "type" : "job"
