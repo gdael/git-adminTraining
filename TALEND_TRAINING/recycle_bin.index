@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/TMC_POC</deletedFolders>
   <deletedItems id="_-_pp4DpJEe6safVQu2GtrA" path="" type="METADATA_FILE_EXCEL"/>
   <deletedItems id="_ZLUeADp1Ee6BSa1Bfg-mQw" path="MTC" type="PROCESS"/>
+  <deletedItems id="_I0kygNO-Ee2G7bxDNOWD3g" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_OU2DMNK4Ee24J-1vBwgffw" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_PHAfMNIkEe2j9vr5QABcYg" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_khEQQMyCEe2gwv041DXYTA" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_nRnFAM-SEe2r_M8QKBeeIg" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_oXbzgM9kEe2nF6JD8UiNyQ" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_qDeIoM-SEe2r_M8QKBeeIg" path="TMC_POC" type="PROCESS"/>
+  <deletedItems id="_xVvwoNL5Ee2G7bxDNOWD3g" path="TMC_POC" type="PROCESS"/>
 </recyclebin:RecycleBin>
