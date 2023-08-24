@@ -229,6 +229,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_PsRuEEIzEe6-nZo9EGU-xw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_m2N_8EJFEe6-nZo9EGU-xw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_m2N_8EJFEe6-nZo9EGU-xw - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_WUECwMnSEeu2oJB43QJFiQ",
     "version" : "0.1",
     "type" : "job"
