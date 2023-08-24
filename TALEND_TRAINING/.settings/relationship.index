@@ -61,7 +61,15 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_nCe1IEJXEe6-nZo9EGU-xw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_EsnNoEJWEe6-nZo9EGU-xw - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_nCe1IEJXEe6-nZo9EGU-xw - Email",
     "version" : "Latest",
     "type" : "schema"
   } ]
