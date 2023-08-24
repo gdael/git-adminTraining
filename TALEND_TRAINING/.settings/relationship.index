@@ -57,11 +57,11 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_m2N_8EJFEe6-nZo9EGU-xw",
+    "id" : "_EsnNoEJWEe6-nZo9EGU-xw",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_m2N_8EJFEe6-nZo9EGU-xw - metadata",
+    "id" : "_EsnNoEJWEe6-nZo9EGU-xw - Customer",
     "version" : "Latest",
     "type" : "schema"
   } ]
