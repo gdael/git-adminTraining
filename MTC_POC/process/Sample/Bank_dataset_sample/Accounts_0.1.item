@@ -3,7 +3,7 @@
     <contextParameter comment="" internalId="_deaDQEY7Ee6DabcNpGtBLw" name="ServerIP" prompt="ServerIP?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_String" value="10.10.10.109"/>
     <contextParameter comment="" internalId="_deaDQUY7Ee6DabcNpGtBLw" name="DataPrep" prompt="DataPrep?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://context.ServerIP:9999/"/>
     <contextParameter comment="" internalId="_deaDQkY7Ee6DabcNpGtBLw" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_String" value="g.dael@mtc.local"/>
-    <contextParameter comment="" internalId="_deaDQ0Y7Ee6DabcNpGtBLw" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_Password" value="enc:system.encryption.key.v1:praYRnR5bCcQcF9nqIDYsHq9zLx6PCQHkZM9DfBENDURyx6hTzQ2JPRz4Q=="/>
+    <contextParameter comment="" internalId="_deaDQ0Y7Ee6DabcNpGtBLw" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_Password" value="enc:system.encryption.key.v1:++5UloxflmXKGRaOPxJfF2XOP2h8Yts+lw/vV6Orkrd2BMjdC7xEmRBvIw=="/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -48,7 +48,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:q6H06lR5nploWCsAJ8LMF/aRUcFn9v9lu/hjAMV0"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:jP136Qbt30jNapOopHgwMZnq6GYUTWdmFYzcpMcI"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4qBjkwNw5Vg5PjuvB6137mqZkID3xJjf0SNtZrNk"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8jy6Igz1Sl99S3UYyyCg7fKvumKv3sB8I4AX7tQm"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -113,7 +113,7 @@
     <routinesParameter id="_9KeZYEDKEe61wIHm7r1X3Q" name="TalendStringUtil"/>
     <routinesParameter id="_9KWdkEDKEe61wIHm7r1X3Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Nsz-UEYxEe6DabcNpGtBLw"/>
@@ -188,7 +188,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -211,7 +211,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="TalendDate.formatDate(&quot;MM/dd/yyyy&quot;,row1.date) " name="vDate" nullable="true" type="id_String"/>
       </varTables>
@@ -229,35 +229,16 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="district_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="frequency"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+  <node componentName="tDatasetOutput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_1"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetoutput.TDataSetOutputProperties&quot;,&quot;__version&quot;:2,&quot;mode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Update&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;mode&quot;,&quot;tags&quot;:null},&quot;dataSetNameForCreateMode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;BankAccount\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetNameForCreateMode&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;limit&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:100},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;limit&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;tDatasetOutput_1\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;account_id\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;account_id\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Integer\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;4\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;account_id\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;district_id\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;district_id\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Integer\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;2\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;district_id\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;frequency\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;frequency\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;frequency\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;date\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;date\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;date\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;tDatasetOutput_1\&quot;,\&quot;di.table.label\&quot;:\&quot;tDatasetOutput_1\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;http://10.10.10.109:9999\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;g.dael@mtc.local\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:P/YavXzspGtJm0nj2d4MDt9Eb3Rx6Wy4a2RYrC5OSPCNdQZuu210Tk3+Um9a&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:{&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" name="tDatasetOutput_1">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="frequency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -268,7 +249,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="Result" lineStyle="0" metaname="Result" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="Result" lineStyle="0" metaname="Result" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDatasetOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Result"/>
   </connection>
@@ -279,13 +260,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b73abc8b-b100-4cff-81a4-4285224bf92e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>N+2Il3wGb1kJzNZkHLPVv564rKLv7t2Pl3tr6o21h2Op2BaQ0XDunXkvYqIjYvi/PTodSjPE3QKB&#13;
-4QzJcYobeA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0ffacde1-43a8-4507-88bb-7b40e48df03d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8D/Hn3k/2kPQBtXHEyUqj5tgnD2ztRkE5AJLDHJsAIgz2TCdCLkHAxro6oAMsGrsQUgf6j3RzI6+&#13;
-Pu/4Ark+sw==</DigestValue></Reference></SignedInfo><SignatureValue>iRFmNi/LYKlq5RqvUWGcpKhRY56GmGNdpz7ClwUe3Sa64oND09byEiAR7F86To+2+A2S4IacKTOV&#13;
-q0YsYE2CApHNW4R4ajFoJxcnimoXufBgt6zxAeoCZfJl6M6V0ikNeH2tyvuSzFFV0dculRWvNGQz&#13;
-R65ZOVSUuW6VvR0rVAIKe7VIlkqK6Ej5X7Y3dAiwZngOIabhsKDTi4UWpukANj1HRLkWTVC7Jf97&#13;
-Sew2RRCxI6H+RZSyeIRGwpvDtFXAZbZ4GwWwrXM+2Efrhn56mEqKSib3ik56/LwU2wnG9IujV729&#13;
-4CASBgQv76HJeoatN76K3DOa0yNKSfvzxaN0yg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ff75d5b-60be-40fe-b7f8-2f37cffb4d64"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>++/ljdsjhisBu/bt9l2JduCuwQ+ln9jmvLD29K23z8CXnrgcvUn35ptN+zMYzujeVbe4Nm3GyP85&#13;
+YmMDPEf0KQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59cbc44d-7693-4bf1-b925-ab5b70fb9d40"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K+nAkAYpArVyW1ILU0f2PE5EP4XspT6CPdbGqUYFkx+9yBhC2metOsrLjJEJuEWyIrBd2B0WaTD/&#13;
+WJxtwdqAFA==</DigestValue></Reference></SignedInfo><SignatureValue>OpcbCn9Kv4glrGnb5zSqr+qEx+iqU4YnEt1Zw88ChI8oZisdrqa5B0jfFFLGSFnyNvFGUYkH18SB&#13;
+u/ooTQ0KDTZxbfvSi4xz50sufA+BcgMt2XtpaDUsgCD/8vqp5ef0p1qDsvElBCcdhxy+0rbQkQGQ&#13;
+YKUI33PfALcAneBM1U4AncMl036hfDHNoR5v2sHaPUu+zKk6q/Z3PwTCUHLbMJrS+ZxXVEOAityW&#13;
+E3hkRo4c5pscQPyjSUgijXXgFNPJCi6ONSWJCqCykLIcKBd4jH8bPYdynNX7/dUH5oeGkn0dQ4t6&#13;
+0/w/gIAKONmCWZY6aLV3Q6DNT4Rh9Hv0g258zA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -307,4 +288,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0ffacde1-43a8-4507-88bb-7b40e48df03d" Target="#_b73abc8b-b100-4cff-81a4-4285224bf92e"><Timestamp>2023-08-29 06:51:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59cbc44d-7693-4bf1-b925-ab5b70fb9d40" Target="#_5ff75d5b-60be-40fe-b7f8-2f37cffb4d64"><Timestamp>2023-08-29 06:52:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
