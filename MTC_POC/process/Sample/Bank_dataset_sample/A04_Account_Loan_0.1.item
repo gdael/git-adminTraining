@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rlefCwlS9uRqf6qRWmZNNh8QmzsU58nWqH8ISluI"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:txbBBUa8w8VaW979rTqux5Hdgj6/FP8WL5AUd6B5"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EQXctKlyHWKRuygddV4tnGeg4FVmW0TacEE6kTzA"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TqJIVkli709CVY07RLOxEr5rSNTnCg7IQ0di+SuK"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -248,7 +248,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Result">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="loan_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -260,7 +259,6 @@
     </metadata>
     <metadata connector="FLOW" name="Reject">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="loan_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -275,7 +273,6 @@
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="row2.loan_id !=null" name="Result" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Account_Client.account_id " name="account_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Account_Client.district_id " name="district_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.loan_id " name="loan_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.date " name="date" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.amount " name="amount" nullable="true" type="id_Integer"/>
@@ -287,7 +284,6 @@
       </outputTables>
       <outputTables activateCondensedTool="true" name="Reject" reject="true" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Account_Client.account_id " name="account_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Account_Client.district_id " name="district_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.loan_id " name="loan_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.date " name="date" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.amount " name="amount" nullable="true" type="id_Integer"/>
@@ -423,8 +419,6 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="district_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="loan_id"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
@@ -449,7 +443,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="loan_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -476,8 +469,6 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="district_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="loan_id"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
@@ -502,7 +493,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="loan_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -852,13 +842,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ff0b6216-91b9-42b0-9fbd-3ed51f7ca1cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zDPP7xTfX7OTLbOIvnMoKQYC16YbUMQawulIDxbUCOADIadbqAzArIWt+H9HKSg3T3I0PKg/OcTL&#13;
-rPzvewWGUA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_acd0a098-772d-4557-8888-4097ce9001f1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iNmPbcSInzO+oOcHWJQv/M8G/BGKhuEcFFsyx+wsvmnXjirkIPkA4Qam8Bwq+XS0HzWYtfIxx+iy&#13;
-2OeZUjk18Q==</DigestValue></Reference></SignedInfo><SignatureValue>B2yUfPB9O7gix/lSJ+Kz3fFNMmbaRe9g8VcUiy9XxAR6VjvOgx62eCFp8f4xNMXx/WVKgQeWkVvI&#13;
-gCr/UbZaQI7GSeS5IMRBIMlmrFDKVYZhp2LDdZeBZFyogm78R4l14yyyZEcZEbgba1M1/0UzTqL1&#13;
-WBXN54r02mNquQ2s/R90RVnldMDhOj2q4M8B87Aewm4tcoZ5sOk5oQxjtAhbuyRJGuv5il4YfzPt&#13;
-fBTO6WZ0X7LxaYJl7M4DsdhLLNMq1K3hxIZ3PheyVbt+eYKuTd3rEffgl3y15LfT3Exb/wSj5Ig+&#13;
-qusNbFVWtJX1jDm8w5ye7zXfBFWX7Bx7dVYYrg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0ac10281-7efa-430f-9521-688aac119dc8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GQhgvFUsMP5UTqANMnFW4ypJlTg3RHzaYF2otBXC9Ecp9AST4heSnJGubgWDCArVRoMU3TL8iwGN&#13;
+4mmIR0J7Yg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a82f100d-8ae9-42e2-90f5-38353d685c4c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UNuDgcfNnH16HSe9/t3Hbta9XN0p94ynxzFGjKvS6pV93HoaoCWsaFaXhv2Y3N3pZQ4/xU2HgbWm&#13;
+vxw38iCl7Q==</DigestValue></Reference></SignedInfo><SignatureValue>Nt25CtL9qnyTU6Jktu+QRlauZOIFnx8/yqST9hVkD2au4wvIAExISZ4G3D2VGLOAbeKO4zfRANhQ&#13;
+cmHh1Zn5js/SKqUKJi7DLPaBL0wY8oI7Shd6Y8QAaP07RBZReQ/4ufLd+WlpPQe7D92/TQpHB942&#13;
+UWoiWsPvH2y2oBbS6z3/TVLHADSe02eIPk8oA+9m9esQD5d8I4ala4LIQRuedh9tMhscRglLkx7V&#13;
+SADvmRguRjmaP357HdNmEPS1OD/Hl7R01A5lM7obQ1kARtlB+eX8/Q7RB5EMboYxKCwg1eONXB4q&#13;
+UMVtIj85zwuY7Fw5BRdTkIo/unEVgEPShPwr8Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -880,4 +870,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_acd0a098-772d-4557-8888-4097ce9001f1" Target="#_ff0b6216-91b9-42b0-9fbd-3ed51f7ca1cb"><Timestamp>2023-08-29 07:50:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a82f100d-8ae9-42e2-90f5-38353d685c4c" Target="#_0ac10281-7efa-430f-9521-688aac119dc8"><Timestamp>2023-08-29 07:50:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
