@@ -1,0 +1,20 @@
+{
+  "itemId" : "_FxZ7EEY-Ee6DabcNpGtBLw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_V8JBIEY6Ee6DabcNpGtBLw",
+    "parameterList" : [ {
+      "id" : "_V8pXcUY6Ee6DabcNpGtBLw",
+      "name" : "ServerIP"
+    }, {
+      "id" : "_V8pXc0Y6Ee6DabcNpGtBLw",
+      "name" : "Username"
+    }, {
+      "id" : "_V8pXdEY6Ee6DabcNpGtBLw",
+      "name" : "Password"
+    }, {
+      "id" : "_mHEH4EZLEe6DabcNpGtBLw",
+      "name" : "File_Directory"
+    } ]
+  } ]
+}
