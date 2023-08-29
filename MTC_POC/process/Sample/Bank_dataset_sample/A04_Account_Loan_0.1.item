@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wbkdBN62k+zYlz3FgC8bBkuqZc8hvOQ1HcypA0LZ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:h9SD28uhOMoGJ1Kuj2DFybiTjTtSUfA+MTyr8t0O"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pqDoV+VQGhm1+vKbwa0smaWatcvbZzm53TyDxpNV"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iCAiaf5/8lJ2smVSDGHhuSR4z262U0hWo8KxRqs8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -108,9 +108,8 @@
     <routinesParameter id="_9KeZYEDKEe61wIHm7r1X3Q" name="TalendStringUtil"/>
     <routinesParameter id="_9KWdkEDKEe61wIHm7r1X3Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Nsz-UEYxEe6DabcNpGtBLw"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
@@ -184,9 +183,8 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -202,19 +200,19 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Account_Client" name="Account_Client">
-      <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="frequency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Account_Client" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.account_id" name="account_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.district_id" name="district_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.frequency" name="frequency" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.date" name="date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row5.account_id " name="account_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.client_id " name="client_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.Lastname " name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.Firstname " name="Firstname" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="account_id" nullable="true" type="id_Integer"/>
@@ -222,11 +220,18 @@
         <mapperTableEntries name="frequency" nullable="true" type="id_String"/>
         <mapperTableEntries name="date" nullable="true" type="id_Date"/>
       </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="disp_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="" name="district_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.account_id " name="account_id" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="client_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Firstname" nullable="true" type="id_String"/>
+      </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -250,6 +255,8 @@
       <column comment="" key="false" length="2" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="payments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Reject">
       <column comment="" key="false" length="4" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -260,9 +267,11 @@
       <column comment="" key="false" length="2" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="payments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="row2.loan_id !=null" name="Result" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Account_Client.account_id " name="account_id" nullable="true" type="id_Integer"/>
@@ -273,6 +282,8 @@
         <mapperTableEntries expression="row2.duration " name="duration" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.payments " name="payments" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row2.status " name="status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Account_Client.Lastname " name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Account_Client.Firstname " name="Firstname" nullable="true" type="id_String"/>
       </outputTables>
       <outputTables activateCondensedTool="true" name="Reject" reject="true" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Account_Client.account_id " name="account_id" nullable="true" type="id_Integer"/>
@@ -283,12 +294,14 @@
         <mapperTableEntries expression="row2.duration " name="duration" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.payments " name="payments" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row2.status " name="status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Account_Client.Lastname " name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Account_Client.Firstname " name="Firstname" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Account_Client" sizeState="INTERMEDIATE">
         <mapperTableEntries name="account_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="district_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="frequency" nullable="true" type="id_String"/>
-        <mapperTableEntries name="date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="client_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Firstname" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="loan_id" nullable="true" type="id_Integer"/>
@@ -301,9 +314,8 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="320">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_te3ncEZBEe6DabcNpGtBLw"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
@@ -395,9 +407,8 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -425,6 +436,10 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="payments"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lastname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Firstname"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -441,11 +456,12 @@
       <column comment="" key="false" length="2" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="payments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -474,6 +490,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lastname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Firstname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -489,6 +509,26 @@
       <column comment="" key="false" length="2" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="payments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Users/g.dael/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Client"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="false" length="2" name="disp_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
@@ -584,10 +624,11 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Client">
       <column comment="" key="false" length="2" name="disp_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="vLastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="vFirstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -597,10 +638,11 @@
       </varTables>
       <outputTables name="Client" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.disp_id " name="disp_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row4.client_id " name="client_id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Var.vLastname " name="vLastname" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="Var.vFirstname " name="vFirstname" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.district_id " name="district_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.account_id " name="account_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.client_id " name="client_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.vLastname " name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.vFirstname " name="Firstname" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
         <mapperTableEntries name="disp_id" nullable="true" type="id_Integer"/>
@@ -684,74 +726,115 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="disp_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="client_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="vLastname"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="vFirstname"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="district_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashOutput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Users/g.dael/workspace/in.hash&quot;"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" show="false" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Client"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_3">
+    <metadata connector="FLOW" name="tHashOutput_1">
       <column comment="" key="false" length="2" name="disp_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="vLastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="vFirstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="district_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="account_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="client_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="Account_Client" lineStyle="0" metaname="Account_Client" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Firstname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="client_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Account_Client"/>
   </connection>
   <connection connectorName="FLOW" label="Result" lineStyle="0" metaname="Result" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Firstname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Result"/>
   </connection>
   <connection connectorName="FLOW" label="Reject" lineStyle="0" metaname="Reject" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Firstname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Reject"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Firstname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="district_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="disp_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="client_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="Client" lineStyle="0" metaname="Client" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tLogRow_3">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tFileInputDelimited_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="Client" lineStyle="0" metaname="Client" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tHashOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Client"/>
   </connection>
@@ -769,13 +852,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_eff35fb1-297e-48d0-ac65-bdb283e4c159"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LyhbRBaHvnGniPuj7OdYS/YsDPWPTwCnZRzcPlyBTMK0ZTIKGikyyCZ+cTE5lpfxgwVKFcqa1WvJ&#13;
-gjov2dL7NQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5d959f8-4a60-4bff-b576-ecaa96c64bae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BNTk17bz7hY+nO+Qpo4tCoVxdGFo/1HijQFEcKTlm21e5gja0oIlPvIHk8Ye5V9HoznWbxXM8x8l&#13;
-/8YJjSj2rw==</DigestValue></Reference></SignedInfo><SignatureValue>idi6TCBSgU1kcGf9EWYpyR3N17gdKc/8UhHn0QlTLrS7dYIHAbgZfTGHRIQVFaM7oS6VpV6AVIDQ&#13;
-JYAlhZ0/oKYaFCtYQ3XoT/Z8R2wj9RRExXwT3vz+9PaJkD4iV6NE+9cHe+WXrjYagL1U8weMoKQb&#13;
-xX1MEL25tlVzTbjpCL3uDxx6HiRLZNnXJeFnwpf20paqmR1vzqGl534z8pmZbqKvUfwnKm5rcjEE&#13;
-xB2StVspg0n29qKW+/Xbjb7FwDou+r5+ZMRK894LnpRtDKUIb2jjnVKfQv73OeOSmty901IY88il&#13;
-DuOrHSNswnKjCfCXfCqI+RF97IUxqo7pdfKG2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8777cc20-6ab0-4d1c-8dae-613c369ea7bf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>99uErC2gu+ZKlMax6syFBv507ITGz1uWvStkUA9UI7y9CCaYpuojsQKuKSXLkm2m+7rcdDYTD/t6&#13;
+6phcwnH9HA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3cf8162b-19aa-4f39-b2a5-9a7c289e605f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vx5t70XTTSCQZDQivUDYG/OWAGc1lUJqlTs8tlRnITkpoCCa1wUMq3+/UF8M0Vzgq7ny54qdqZi0&#13;
+Jyq7F0iyOg==</DigestValue></Reference></SignedInfo><SignatureValue>LHvTgQsAHxQ/fiHWZ3AP8cGDKRCx5p9FFvJNOUr5oUajb+3sHaJI8MzLwy4ughmoAyhJX1bUp3OA&#13;
+dXoCZqXSW+PJ450SbSgGFLdsQwV7yR3y+vMPkp+ITLGhr89/w/fcAxtQ+m7ZfEIR7qdWZh4MiPVg&#13;
+W2ZLwWQCWhvfebSAutcQ1/51HJModvyRjbKJ4ZMMwr5+CLtXNb/pus8Hg/1v3jyhspi8z+ifFtX+&#13;
+1vddw9+IcRBlz1CY81FB5oPJyxQXHnZMyn5oXC+O5u6pgYeoVe4bjUhnfObKm80LdIDlHP7u+fQ1&#13;
+WwFAG8J/EtpaZQocRbYVlN6/WDAk/JOTaJ0R0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -797,4 +880,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5d959f8-4a60-4bff-b576-ecaa96c64bae" Target="#_eff35fb1-297e-48d0-ac65-bdb283e4c159"><Timestamp>2023-08-29 07:43:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3cf8162b-19aa-4f39-b2a5-9a7c289e605f" Target="#_8777cc20-6ab0-4d1c-8dae-613c369ea7bf"><Timestamp>2023-08-29 07:49:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
