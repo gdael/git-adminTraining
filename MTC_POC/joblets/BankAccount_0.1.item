@@ -3,7 +3,7 @@
     <context confirmationNeeded="false" name="Default">
       <contextParameter comment="" internalId="_wO8hYEZMEe6DabcNpGtBLw" name="ServerIP" prompt="ServerIP?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_String" value="10.10.10.109"/>
       <contextParameter comment="" internalId="_wO8hYUZMEe6DabcNpGtBLw" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_String" value="g.dael@mtc.local"/>
-      <contextParameter comment="" internalId="_wO8hYkZMEe6DabcNpGtBLw" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_Password" value="enc:system.encryption.key.v1:+r0DIwxQOYR+qyssPv7WSsnIUOWVirD4a3JroLvihP/Ix+zN7kBhM8CcHg=="/>
+      <contextParameter comment="" internalId="_wO8hYkZMEe6DabcNpGtBLw" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_Password" value="enc:system.encryption.key.v1:8ZFeutCqyGbjTEGskSDbzSMbQEM7ukuiNOT2fWWIV712uKcc9TQOm7OA4A=="/>
       <contextParameter comment="" internalId="_wO8hY0ZMEe6DabcNpGtBLw" name="File_Directory" prompt="File_Directory?" promptNeeded="false" repositoryContextId="_V8JBIEY6Ee6DabcNpGtBLw" type="id_Directory" value="D:\01. Data Integration\Talend\Training Materials\Sample Data\Bank Dataset Sample\data_berka"/>
     </context>
     <parameters>
@@ -51,7 +51,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6YKsbOmiUij9SbupHjE1iuFVCH5ngOllwi0li7xv"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:A9RGoTYoP57hzf+vSX/eYjObYvKgCPT0Yzbu7+6w"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -87,7 +87,7 @@
       <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
       <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Nsz-UEYxEe6DabcNpGtBLw - account"/>
       <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEDIRECTORY&quot;)) + &quot;/&quot; + ((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;))"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEDIRECTORY&quot;)) + &quot;\&quot; + ((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;))"/>
       <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
       <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
       <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -317,13 +317,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dbd50be7-9254-4c43-bf8c-799e53c567bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Dd21SsgBkCjA/9itS/b+q8KutxFtGsndvX/2fTP2+dSrHt2yfoFJWMKL0i7m6szaL6jh94m6XpmG&#13;
-KH2eictjMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_94aa30f2-5d84-4d44-b244-f57e4eb7a07e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o4ly1mHKtfvYolIrz0kKWCWgMmb7gyAoNFkMYpNf/X5yrNQpKzdRODyg2MLRdInj/N0GfER5ZmOP&#13;
-NS5J9tDNmw==</DigestValue></Reference></SignedInfo><SignatureValue>KVpTXdg1Xm1g0vcu1CWdtq5QPtPTAlrAJguAg4CXbwumqBcrWz1uwQ5kW1EXrI9R5WkQwhuhvOKQ&#13;
-JAlji8y6a1lM1zLcBnEiMzdNYVT+O/nqtLLfZvEe0Q1yo6OIsKj13YiAaRmHeKKX4ctnrvrbdGqk&#13;
-dVGqVbC/UuqKO5Si1wy4paIjLqEdOIrceftiiIrtTskvi4mlasCL4ajNbeKY0HZkhVzEmpRgGYtA&#13;
-gEX4ZTmAsn9uYX/9xjUu5WGwvaF1w8qe1WlTDONLO0/ETKF0Zkz7wGK51kiYeUJUsIVxfAAOffBe&#13;
-Cyxq9QnizvJ90xaUSMizXrQv4Cucq4lj7g+WOA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_268a91ae-89ef-4197-9cd7-437c250bc932"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PXM8NREPDG4y9+E/tWnRlDNpn7iaJ5FcdGGs+u7MtAwHTTmcaimNF6P6j5QEnVaYaWXmLbkIC+G4&#13;
+XspfIIgFng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_050b2b66-0ea9-4d20-b0a6-e0845a6aca53"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GRp0u1CXKt80d/9l1le/mQRfqQ5zqM3mVzWfk6R0giO2sM4YhRV9aPYzI2y2VGbiyHjeTbG21J1d&#13;
+n1Y9JPgsvQ==</DigestValue></Reference></SignedInfo><SignatureValue>JNWFxy5KPikZBachjgUIsd5o9s1VbDMJCObBQxAw53J9Qi879tssqrmPc02CnXcKFCyXRTlayJEt&#13;
+r9b2szC+N1hwmsdiCFr5xlGdveXPYgpEpw8pyQWp4dvVrPQ+7Bn8nr3R99gCe1gk06PhYHjvC3Nh&#13;
+LjuexwCmw6+DU7EDHyiGiT3IHxWvHpXIpZbYdrheRRnWlY0NFQxVx8s9Jst3Tf+LaJoo8iRcXd5P&#13;
+ZBk8Iy9HyKyU2tkTPAnUyvxs/PMzMJcINisj3b/XQroxMRvcQNmv6cEjY97aDMeYhxjeSO9vgZCz&#13;
+xcbjCr85dMAwJTVEYwSFNUAkqVXVDCl3ixzWRw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -345,4 +345,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_94aa30f2-5d84-4d44-b244-f57e4eb7a07e" Target="#_dbd50be7-9254-4c43-bf8c-799e53c567bc"><Timestamp>2023-08-29 08:50:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_050b2b66-0ea9-4d20-b0a6-e0845a6aca53" Target="#_268a91ae-89ef-4197-9cd7-437c250bc932"><Timestamp>2023-08-29 08:51:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
